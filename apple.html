@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GadTech - Apple Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif; /* Change font family */
+            background-color: #f4f4f4; /* Light background for better visibility */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the page */
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            color: rgb(0, 0, 0); /* White text color */
+            padding: 20px; /* Add padding */
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            display: flex; /* Use Flexbox for nav items */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Add space between menu items */
+        }
+
+        nav ul li a {
+            color: white; /* Change link color to white */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin from h1 */
+        }
+
+        /* Product container styles */
+        .products-container {
+            display: flex; /* Use Flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping to new rows */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .product {
+            background: white; /* White background for product cards */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            margin: 10px; /* Space around each product */
+            padding: 15px; /* Padding inside product cards */
+            flex: 0 0 calc(50% - 20px); /* Two products per row */
+            box-sizing: border-box; /* Include padding and margin in width calculations */
+            text-decoration: none; /* Remove underline from links */
+            transition: transform 0.2s; /* Smooth transition for hover effect */
+            color: black; /* Set text color to black */
+        }
+
+        .product:hover {
+            transform: scale(1.02); /* Slightly enlarge on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        .image-container {
+            text-align: center; /* Center the image */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Responsive images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Slightly rounded corners for images */
+        }
+
+        .description {
+            text-align: center; /* Center align text */
+        }
+
+        .rating {
+            margin-top: 10px; /* Add margin above rating */
+            font-weight: bold; /* Make rating bold */
+        }
+
+        /* New styles specifically for the iPhone images */
+        #iphone16 img {
+            max-width: 40%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #iphone15 img {
+            max-width: 40%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #iphone14 img {
+            max-width: 35%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #iphone13 img {
+            max-width: 50%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #iphone12 img {
+            max-width: 25%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #iphone11 img {
+            max-width: 50%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>GadTech®️</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Latest</a></li>
+                <li><a href="apple.html">Apple</a></li>
+                <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-container">
+        <!-- Row 1 -->
+        <a href="iphone16.html" class="product">
+            <div class="image-container" id="iphone16">
+                <img src="iphone16.webp" alt="iPhone 16">
+            </div>
+            <div class="description">
+                <h3>iPhone 16</h3>
+                <p>Improved performance, exceptional camera system, and longer battery life.</p>
+                <div class="rating">Rating: ★★★★★</div>
+            </div>
+        </a>
+
+        <a href="iphone15.html" class="product">
+            <div class="image-container" id="iphone15">
+                <img src="iphone15.webp" alt="iPhone 15">
+            </div>
+            <div class="description">
+                <h3>iPhone 15</h3>
+                <p>Sleek design with enhanced performance and powerful camera system.</p>
+                <div class="rating">Rating: ★★★★★</div>
+            </div>
+        </a>
+
+        <!-- Row 2 -->
+        <a href="iphone14.html" class="product">
+            <div class="image-container" id="iphone14">
+                <img src="iphone14.webp" alt="iPhone 14">
+            </div>
+            <div class="description">
+                <h3>iPhone 14</h3>
+                <p>Featuring enhanced performance, improved camera capabilities, and advanced safety features.</p>
+                <div class="rating">Rating: ★★★★☆</div>
+            </div>
+        </a>
+
+        <a href="iphone13.html" class="product">
+            <div class="image-container" id="iphone13">
+                <img src="iphone13.webp" alt="iPhone 13">
+            </div>
+            <div class="description">
+                <h3>iPhone 13</h3>
+                <p>Stunning display and powerful features in a sleek design.</p>
+                <div class="rating">Rating: ★★★★★</div>
+            </div>
+        </a>
+
+        <!-- Row 3 -->
+        <a href="iphone12.html" class="product">
+            <div class="image-container" id="iphone12">
+                <img src="iphone12.webp" alt="iPhone 12">
+            </div>
+            <div class="description">
+                <h3>iPhone 12</h3>
+                <p>Exceptional battery life and stunning camera capabilities.</p>
+                <div class="rating">Rating: ★★★★★</div>
+            </div>
+        </a>
+
+        <a href="iphone11.html" class="product">
+            <div class="image-container" id="iphone11">
+                <img src="iphone11.webp" alt="iPhone 11">
+            </div>
+            <div class="description">
+                <h3>iPhone 11</h3>
+                <p>Stay ahead with the latest technology and features.</p>
+                <div class="rating">Rating: ★★★★★</div>
+            </div>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cellphone Gadgets Reviews. All rights reserved.</p>
+    </footer>
+</body>
+</html>

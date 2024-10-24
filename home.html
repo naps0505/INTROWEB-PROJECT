@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GadTech - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Set background to transparent black */
+            color: rgb(0, 0, 0); /* Change text color to ensure visibility */
+            padding: 20px; /* Add padding for spacing */
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            display: flex; /* Use Flexbox for nav items */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Add space between menu items */
+        }
+
+        nav ul li a {
+            color: white; /* Change link color to white */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+
+        h1 {
+            margin: 0; /* Remove default margin from h1 */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>GadTech®️</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Latest</a></li>
+                <li><a href="apple.html">Apple</a></li> <!-- New Apple page link -->
+                <li><a href="samsung.html">Samsung</a></li> <!-- New Samsung page link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+    </section>
+
+    <!-- Background Video Section -->
+    <section id="background-video">
+        <video autoplay muted loop>
+            <source src="iphone16vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+</html>

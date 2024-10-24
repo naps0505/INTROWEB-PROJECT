@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iPhone 13</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center; /* Center the header */
+            margin-bottom: 20px; /* Space below the header */
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .image-container {
+            flex: 1;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            flex: 1;
+            padding: 20px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            color: rgb(0, 0, 0); /* White text color */
+            padding: 20px; /* Add padding */
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
+        nav ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            display: flex; /* Use Flexbox for nav items */
+        }
+        nav ul li {
+            margin: 0 15px; /* Add space between menu items */
+        }
+        nav ul li a {
+            color: white; /* Change link color to white */
+            text-decoration: none; /* Remove underline from links */
+        }
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+        .buy-link {
+            text-align: center; /* Center the buy link */
+            margin-top: 20px; /* Add space above the link */
+        }
+        .buy-link a {
+            color: #007bff; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make the text bold */
+        }
+        .buy-link a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>GadTech®️</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Latest</a></li>
+                <li><a href="apple.html">Apple</a></li>
+                <li><a href="samsung.html">Samsung</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>iPhone 13 Specifications</h1>
+    <div class="container">
+        <div class="image-container">
+            <img src="iphone13.webp" alt="iPhone 13">
+        </div>
+        <div class="description">
+            <p><strong>Specifications:</strong></p>
+            <p>• Display: 6.1 inches Super Retina XDR</p>
+            <p>• Processor: A15 Bionic chip</p>
+            <p>• Camera: Dual 12MP cameras</p>
+            <p>• Battery: Up to 19 hours talk time</p>
+            <p>• Storage: Available in 128GB, 256GB, and 512GB</p>
+            <p>• Colors: Pink, Blue, Midnight, Starlight</p>
+        </div>
+    </div>
+
+    <div class="buy-link">
+        <p>If you're interested in purchasing the iPhone 13, you can buy it <a href="https://www.apple.com/shop/buy-iphone/iphone-13" target="_blank">here</a>.</p>
+    </div>
+</body>
+</html>

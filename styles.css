@@ -1,0 +1,335 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: left;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+}
+
+.header-content {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #e68a00;
+}
+
+/* Featured Section */
+#featured {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#featured h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-items .item {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-items .item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.featured-items .item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.featured-items .item p {
+    color: #555;
+}
+
+.read-more {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #e68a00;
+}
+
+/* Categories Section */
+#categories {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#categories h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.category h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.category h3 a:hover {
+    color: #ff9800;
+}
+
+/* About and Contact Section */
+#about, #contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#about p, #contact p {
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #e68a00;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Image Handling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ensure all review images are responsive */
+.review img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .featured-items .item, .category {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .review img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Specific resizing for iPhone 16 image */
+#iphone16 .image-container img {
+    max-width: 300px; /* Set a max width for the image */
+    width: 100%; /* Ensure it scales down to smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* You can also add specific rules for smaller screens */
+@media (max-width: 768px) {
+    #iphone16 .image-container img {
+        max-width: 100%; /* Ensure the image is fluid on mobile */
+    }
+}
+
+/* Turn the entire section into a clickable button */
+.button-review {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff; /* Button background color */
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #000000; /* Text color */
+}
+
+.button-review:hover {
+    background-color: #000000; /* Darker color on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.button-review img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.button-review p, .button-review .rating {
+    color: white; /* Ensures text color matches the button */
+}
+
+/* Ensure the hover effect is consistent for smaller screens */
+@media (max-width: 768px) {
+    .button-review {
+        padding: 15px;
+    }
+}
+
+.reviews-container {
+    display: flex; /* Align children (iPhone 16 and Samsung S24) in a row */
+    gap: 20px; /* Add some space between the reviews */
+}
+
+.review {
+    flex: 1; /* Allow reviews to grow equally */
+}
+
+.image-container {
+    flex: 0 0 auto; /* Prevent the image from stretching */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.description {
+    flex: 1; /* Allow the description to take up remaining space */
+}
+
+#samsungs24 .image-container img {
+    max-width: 250px; /* Set a max width for the image */
+    width: 100%; /* Ensure it scales down to smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#iphone15 .image-container img {
+    max-width: 300px; /* Set a max width for the image */
+    width: 100%; /* Ensure it scales down to smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send video behind content */
+}
+
+#background-video video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Cover the entire section */
+}
